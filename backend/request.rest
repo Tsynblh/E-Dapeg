@@ -1,0 +1,57 @@
+# CONTOH
+
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "tempatLahir": "Jakarta",
+  "tanggalLahir": "1990-01-01",
+  "gender": "male",
+  "nik": "1234567890123456",
+  "email": "john.doe@example.com",
+  "notelp": "+1234567890",
+  "agama": "Islam",
+  "nip": "1234567890123456",
+  "jabatan": "Manager",
+  "bagian": "Human Resources",
+  "grade": "A",
+  "atasan": "Supervisor",
+  "unitKerja": "Department A",
+  "password": "password123",
+  "role": "admin"
+}
+
+###
+# login user
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+  "email": "john.doe@example.com",
+  "password": "password123"
+}
+
+###
+# Login
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+  "email": "john.doe@example.com",
+  "password": "password123"
+}
+
+###
+# Post orangTua
+POST http://localhost:5000/orangtua
+Content-Type: application/json
+
+{
+  "namaLengkap": "Jane Doe",
+  "status": "Ibu",
+  "tempatLahir": "Bandung",
+  "tanggalLahir": "1965-02-15",
+  "alamat": "Jl. Sudirman No. 10, Bandung",
+  "uploadBerkas": "path/to/berkas.pdf"
+}
